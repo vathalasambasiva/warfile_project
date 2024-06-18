@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Boxfuse Sample App: success!</title>
@@ -16,7 +17,17 @@
 </strong> generated from <strong><%= System.getenv("BOXFUSE_PAYLOAD_NAME")%>
 </strong></p>
 
-<% if("virtualbox".equals(System.getenv("BOXFUSE_PLATFORM_ID"))) { %>
+<p>Additional Details:</p>
+<ul>
+    <li><strong>Name:</strong> Smabasiva</li>
+    <li><strong>Employer:</strong> Cognizant</li>
+    <li><strong>Location:</strong> Tirupathi</li>
+    <li><strong>Occupation:</strong> DevOps Engineer</li>
+    <li><strong>Hobbies:</strong> Cricket and Hockey</li>
+</ul>
+
+<p>If you are using the VirtualBox platform:</p>
+
 <h2 style="margin-top: 80px">Next steps</h2>
 
 <p style="margin-bottom: 20px;">
@@ -46,6 +57,7 @@
     <strong>boxfuse run -env=prod <%= System.getenv("BOXFUSE_APP")%>:<%= System.getenv("BOXFUSE_IMAGE_VERSION")%>
     </strong>
 </p>
+
 <% } else { %>
 <h2 style="margin-top: 80px">Now it's your turn!</h2>
 
